@@ -1,0 +1,5 @@
+rojo:#c82033;
+rojosecondary:#f22a40;
+fondo:#f2f2f2;
+grisblack:#343434;
+gris:gray;

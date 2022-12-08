@@ -1,0 +1,130 @@
+/*selector universal*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Verdana;
+}
+/*selector de etiqueta*/
+body{
+    background-image: url(/img/fondo3.JPG);
+    background-size: cover;
+}
+header{
+    background-color: goldenrod;
+    width: 100%;
+    height: 45px;
+    overflow: hidden;/*los elementos se queden dentro, al aplicar float*/
+    top: 0px;
+}
+h2{
+    color: #c82033;/*color de la fuente = texto*/
+    font-weight: bold;/*negrita*/
+    font-size: 80px;
+    margin: 20px;
+    text-align: left;
+    text-align: center;
+}
+section{
+    background-color: #ffffff;
+    margin: 1.5em;/*margen externo*/
+    padding: 1.5em;/*margen interno*/
+    overflow: hidden;/*es para los elementos float*/
+    max-width: 900px;/*hasta un ancho máximo de 695px*/
+}
+p{
+    text-align: justify;
+    font-size:  30px;
+}
+aside{
+    width: 200px;
+    float: left;
+    margin-right: 1.5em;
+}
+/*selector clases*/
+.imgmenu{
+   height: 32px; 
+   width: auto;
+   margin: 5px;
+}
+.imgbanner{
+    float: right;/*flote a la derecha*/
+    /*border-radius: 50%;*/
+    border:black 3px solid;
+    width: 50%;
+    max-height: 300px;
+    max-width: 260px;
+}
+.pflotar{
+   float: left;/*flote a la izquierda*/
+   width: 70%; 
+}
+.submenu{
+    position: absolute;
+    background-color:  goldenrod;
+    display: none;
+}
+.sectvideo{
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*selector descendente*/
+header nav{
+    float: right;
+    color: #ffffff; 
+    width: 70%;
+}
+header nav a{
+    color: #ffffff;
+    text-decoration: none;
+}
+header nav ul{
+    list-style: none;/*quitar el punto de la viñeta*/
+    display: flex;/*elementos en horizontal*/
+    padding: 0.5em;
+    justify-content: space-around;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+header nav a:hover{
+    
+    color: #343434; 
+    text-decoration: none;
+}
+.submenu li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: #f2f2f2 solid 1px;
+} 
+.sectvideo video{
+    width: 100%;
+    box-shadow: 2px 2px 2px #c82033;
+}
+/*selector de identificador*/
+#cursos article{
+    background-color: #c82033;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    width: 47%;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    float: left;
+}
+#cursos article:nth-last-child(4){
+    background-image: url(../img/chico_carreras.png);
+}
+#cursos article:nth-last-child(3){
+    background-image: url(../img/chica_cursos.png);
+}
+#cursos article:nth-last-child(2){
+    background-image: url(../img/chico_diplomado.png);
+}
+#cursos article:nth-last-child(1){
+    background-image: url(../img/chica_dual.png);
+}
